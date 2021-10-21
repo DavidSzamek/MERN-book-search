@@ -40,7 +40,6 @@ const SignupForm = () => {
           setShowAlert(true);
         }
       
-  
       setUserFormData({
         username: '',
         email: '',
