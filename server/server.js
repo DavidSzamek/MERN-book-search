@@ -23,8 +23,8 @@ const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context:authMiddleware
-});
+  context: authMiddleware
+})
 
 server.applyMiddleware({ app });
 
@@ -46,3 +46,4 @@ db.once('open', () => {
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
   });
 });
+
